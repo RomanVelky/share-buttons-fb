@@ -227,6 +227,15 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <share-buttons
+              [showIcon]="true"
+              [theme]="'default'"
+              [include]="['x', 'reddit', 'telegram', 'messenger', 'whatsapp']"
+              [show]="5"
+              [url]="'seif.finance'"
+              [description]="'share buttons description'"
+              [title]="'share button title'"
+            ></share-buttons>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
